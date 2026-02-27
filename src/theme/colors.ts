@@ -1,0 +1,26 @@
+export const palette = {
+  primary: '#6C63FF',
+  primaryLight: '#A29BFE',
+  secondary: '#FF6B6B',
+  accent: '#4ECDC4',
+  background: '#F8F9FA',
+  surface: '#FFFFFF',
+  surfaceVariant: '#F1F3F4',
+  onPrimary: '#FFFFFF',
+  onSecondary: '#FFFFFF',
+  onBackground: '#1A1A2E',
+  onSurface: '#1A1A2E',
+  onSurfaceVariant: '#5F6368',
+  outline: '#DADCE0',
+  error: '#B00020',
+  success: '#00897B',
+  warning: '#FF9800',
+
+  // Dark mode
+  darkBackground: '#121212',
+  darkSurface: '#1E1E1E',
+  darkSurfaceVariant: '#2A2A2A',
+  darkOnBackground: '#E8EAED',
+  darkOnSurface: '#E8EAED',
+  darkOutline: '#3C3C3C',
+} as const;

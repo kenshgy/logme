@@ -1,0 +1,26 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "tables": {
+    "categories": {
+      "name": "categories",
+      "columns": {
+        "id": { "name": "id", "type": "integer", "primaryKey": true, "notNull": true, "autoincrement": true },
+        "name": { "name": "name", "type": "text", "primaryKey": false, "notNull": true, "autoincrement": false },
+        "icon": { "name": "icon", "type": "text", "primaryKey": false, "notNull": true, "autoincrement": false },
+        "color": { "name": "color", "type": "text", "primaryKey": false, "notNull": true, "autoincrement": false },
+        "input_type": { "name": "input_type", "type": "text", "primaryKey": false, "notNull": true, "autoincrement": false },
+        "unit": { "name": "unit", "type": "text", "primaryKey": false, "notNull": false, "autoincrement": false },
+        "sort_order": { "name": "sort_order", "type": "integer", "primaryKey": false, "notNull": true, "autoincrement": false, "default": 0 },
+        "is_system": { "name": "is_system", "type": "integer", "primaryKey": false, "notNull": true, "autoincrement": false, "default": false },
+        "is_active": { "name": "is_active", "type": "integer", "primaryKey": false, "notNull": true, "autoincrement": false, "default": true }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": { "schemas": {}, "tables": {}, "columns": {} }
+}
