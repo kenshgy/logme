@@ -11,6 +11,7 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@expo/metro-runtime": "^55.0.6",
     "@expo/vector-icons": "^15.1.1",
     "@gorhom/bottom-sheet": "^4.6.4",
     "@react-native-community/datetimepicker": "^8.6.0",
