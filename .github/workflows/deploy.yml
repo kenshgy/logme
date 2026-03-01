@@ -34,6 +34,11 @@ jobs:
       - name: Build web
         run: npx expo export --platform web
 
+      - name: Setup cross-origin isolation for SQLite
+        run: |
+          cp coi-serviceworker.js dist/coi-serviceworker.js
+          sed -i 's|</head>|<script src="/logme/coi-serviceworker.js"></script></head>|' dist/index.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
